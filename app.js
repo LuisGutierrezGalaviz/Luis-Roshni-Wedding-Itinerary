@@ -2,7 +2,7 @@
 const hotel = {venue:'Archer Hotel Redmond',address:'7200 164th Ave NE, Redmond, WA 98052'};
 const days = [
   {id:'oct-10',weekday:'Saturday',date:'October 10',title:'Welcome to Washington',intro:'Arrive, settle in, and join the plans that work for your arrival time.',events:[
-    {id:'boat',time:'4:00–6:00 PM',title:'Seattle boat ride',venue:'The Electric Boat Company',address:'2046 Westlake Ave N #102, Seattle, WA 98109',tag:'Early arrivals',description:"For Luis and Roshni, Luis’s parents, his brother and girlfriend with their baby, and Michelle.",start:'2026-10-10T16:00:00-07:00',end:'2026-10-10T18:00:00-07:00'},
+    {id:'boat',time:'4:00–6:00 PM',title:'Seattle boat ride',venue:'The Electric Boat Company',address:'2046 Westlake Ave N #102, Seattle, WA 98109',tag:'Early arrivals',start:'2026-10-10T16:00:00-07:00',end:'2026-10-10T18:00:00-07:00'},
     {id:'la-palmera',time:'6:30–8:00 PM',title:'Dinner at La Palmera',venue:'La Palmera Mexican Restaurant',address:'901 Mercer St, Seattle, WA 98109',start:'2026-10-10T18:30:00-07:00',end:'2026-10-10T20:00:00-07:00'}
   ]},
   {id:'oct-11',weekday:'Sunday',date:'October 11',title:'A day around Redmond',events:[
