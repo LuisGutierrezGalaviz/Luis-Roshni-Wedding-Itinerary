@@ -10,13 +10,13 @@ const days = [
     {id:'marymoor',time:'12:00–2:00 PM',title:'Marymoor Park',venue:'Marymoor Park',address:'6046 West Lake Sammamish Pkwy NE, Redmond, WA 98052',start:'2026-10-11T12:00:00-07:00',end:'2026-10-11T14:00:00-07:00'},
     {id:'explore',time:'After Marymoor · Flexible',title:'Explore Redmond & nearby',tag:'Optional',description:'If we have time and feel like exploring, a few options:',options:[{text:'Flatstick Pub — mini golf in Redmond',url:'https://flatstickpub.com/redmond/'},{text:'Redmond Town Center — shops, coffee, and a walk',url:'https://redmondtowncenter.com/'},{text:'Visit our apartment at Avalon Commons in Bothell, for anyone who hasn’t seen it.'},{text:'Or head back to the hotel and relax.'}]},
     {id:'agave',time:'6:30–7:30 PM',title:'Dinner at Agave',venue:'Agave Cocina & Cantina',address:'17158 Redmond Way #180, Redmond, WA 98052',start:'2026-10-11T18:30:00-07:00',end:'2026-10-11T19:30:00-07:00'},
-    {id:'mehndi',time:'7:30–9:00 PM',title:'Mehndi at the hotel',...hotel,tag:'Optional',description:'For anyone who would like mehndi applied. Roshni and her mom are joining so far.',start:'2026-10-11T19:30:00-07:00',end:'2026-10-11T21:00:00-07:00'}
+    {id:'mehndi',time:'7:30–9:00 PM',title:'Mehndi at the hotel',...hotel,tag:'Optional',description:'For anyone who would like mehndi applied.',start:'2026-10-11T19:30:00-07:00',end:'2026-10-11T21:00:00-07:00'}
   ]},
   {id:'oct-12',weekday:'Monday',date:'October 12',title:'The civil ceremony',events:[
     {id:'breakfast-options',time:'8:00 AM',title:'Breakfast',description:'Choose what works for you before getting ready.',options:[{text:'Village Square Cafe'},{text:'The Original Pancake House'},{text:'Crepes at Redmond Town Center'}]},
     {id:'depart-chapel',time:'Ready by noon · Leave at 12:30 PM',title:'Head to Belle Chapel',description:'Finish getting ready by noon. Leave at 12:30 PM to arrive at the chapel at 1:30 PM.',venue:'Belle Chapel',address:'231 Avenue B, Snohomish, WA 98290',start:'2026-10-12T12:30:00-07:00',end:'2026-10-12T13:30:00-07:00'},
     {id:'civil',time:'Arrive 1:30 PM · Ceremony 2:00 PM',title:'Our civil ceremony',venue:'Belle Chapel',address:'231 Avenue B, Snohomish, WA 98290',schedule:[['1:30 PM','Arrive and get ready at the chapel'],['2:00 PM','Ceremony'],['2:30–3:30','Photos around the venue']],start:'2026-10-12T13:30:00-07:00',end:'2026-10-12T15:30:00-07:00'},
-    {id:'earls',time:'7:00–8:00 PM',title:'Dinner at Earls',venue:'Earls Kitchen + Bar',address:'700 Bellevue Way NE, Unit 130, Bellevue, WA 98004',start:'2026-10-12T19:00:00-07:00',end:'2026-10-12T20:00:00-07:00'}
+    {id:'earls',time:'7:00–10:00 PM',title:'Dinner at Earls',venue:'Earls Kitchen + Bar',address:'700 Bellevue Way NE, Unit 130, Bellevue, WA 98004',start:'2026-10-12T19:00:00-07:00',end:'2026-10-12T22:00:00-07:00'}
   ]},
   {id:'oct-13',weekday:'Tuesday',date:'October 13',title:'The Hindu ceremony',events:[
     {id:'bakery',time:'7:00–8:00 AM',title:'Breakfast',description:'French Bakery breakfast is planned. Serving details to follow.'},
