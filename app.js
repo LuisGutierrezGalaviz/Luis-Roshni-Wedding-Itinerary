@@ -19,7 +19,8 @@ const days = [
     {id:'earls',time:'7:00–10:00 PM',title:'Dinner at Earls',venue:'Earls Kitchen + Bar',address:'700 Bellevue Way NE, Unit 130, Bellevue, WA 98004',start:'2026-10-12T19:00:00-07:00',end:'2026-10-12T22:00:00-07:00'}
   ]},
   {id:'oct-13',weekday:'Tuesday',date:'October 13',title:'The Hindu ceremony',events:[
-    {id:'bakery',time:'7:00–8:00 AM',title:'Breakfast',description:'French Bakery breakfast is planned. Serving details to follow.'},
+    {id:'bakery',time:'7:30–8:00 AM',title:'Breakfast from Farine',...hotel,description:'Delivery between 7:15 and 7:30 AM. Bacon and veggie sandwiches, pastries, yogurt parfaits, overnight oats, coffee and juice.'},
+    {id:'depart-temple',time:'9:00 AM',title:'Head to ISKCON Vedic Cultural Center',description:'Leave the hotel at 9:00 AM. Arrive at 9:30 AM.',venue:'ISKCON Vedic Cultural Center',address:'1420 228th Ave SE, Sammamish, WA 98075',start:'2026-10-13T09:00:00-07:00',end:'2026-10-13T09:30:00-07:00'},
     {id:'hindu',time:'10:00 AM–1:00 PM',title:'Our Hindu ceremony',venue:'ISKCON Vedic Cultural Center',address:'1420 228th Ave SE, Sammamish, WA 98075',start:'2026-10-13T10:00:00-07:00',end:'2026-10-13T13:00:00-07:00'},
     {id:'kanishka',time:'2:00–4:00 PM',title:'Lunch at Kanishka',venue:'Kanishka Cuisine of India',address:'16651 Redmond Way, Suite 180, Redmond, WA 98052',start:'2026-10-13T14:00:00-07:00',end:'2026-10-13T16:00:00-07:00'}
   ]},
