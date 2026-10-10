@@ -26,7 +26,8 @@ const days = [
   ]},
   {id:'oct-14',weekday:'Wednesday',date:'October 14',title:'Safe travels home',intro:'Thank you for being here with us.',events:[
     {id:'departures',time:'Throughout the day',title:'Family departures'}
-  ]}
+  ]},
+  {id:'oct-15',weekday:'Thursday',date:'October 15',title:'Next stop: Maui.',intro:'A little island time for the newlyweds.',maui:true,events:[]}
 ];
 
 const links = document.getElementById('date-links');
@@ -57,10 +58,12 @@ function eventMarkup(event){
 }
 days.forEach(day=>{
   const a=document.createElement('a');a.className='day-link';a.href=`#${day.id}`;a.innerHTML=`<span class="weekday">${day.weekday.slice(0,3)}</span>Oct ${day.date.split(' ')[1]}`;a.setAttribute('aria-controls',day.id);links.appendChild(a);
-  const section=document.createElement('section');section.className='day-panel';section.id=day.id;section.setAttribute('aria-labelledby',`${day.id}-title`);section.innerHTML=`<p class="day-date">${day.weekday}, ${day.date}</p><h2 id="${day.id}-title">${day.title}</h2>${day.intro?`<p class="day-intro">${day.intro}</p>`:''}<div class="event-list">${day.events.map(eventMarkup).join('')}</div>`;panels.appendChild(section);
+  const section=document.createElement('section');section.className='day-panel';section.id=day.id;section.setAttribute('aria-labelledby',`${day.id}-title`);section.innerHTML=`<p class="day-date">${day.weekday}, ${day.date}</p><h2 id="${day.id}-title">${day.title}</h2>${day.intro?`<p class="day-intro">${day.intro}</p>`:''}${day.maui?mauiMarkup():`<div class="event-list">${day.events.map(eventMarkup).join('')}</div>`}`;panels.appendChild(section);
 });
+initializeMauiPostcard();
 function selectDay(){
   const id=days.some(day=>`#${day.id}`===location.hash)?location.hash.slice(1):days[0].id;
+  document.querySelector('.time-note').hidden=id==='oct-15';
   document.querySelectorAll('.day-panel').forEach(panel=>panel.hidden=panel.id!==id);
   document.querySelectorAll('.day-link').forEach(link=>{if(link.hash===`#${id}`)link.setAttribute('aria-current','date');else link.removeAttribute('aria-current')});
   document.querySelectorAll('.calendar-menu[open]').forEach(menu=>menu.open=false);

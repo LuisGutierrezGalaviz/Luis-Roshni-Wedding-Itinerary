@@ -69,3 +69,47 @@ h3{font:400 25px/1.25 Georgia,serif}
 @media(max-width:520px){.site-shell{padding:22px 20px 0}.site-header{align-items:start;padding-bottom:17px}.wordmark{font-size:23px}.site-header>span{max-width:110px;text-align:right;font-size:11px}.hero{grid-template-columns:1fr;gap:25px;padding:32px 0}.hero h1{font-size:48px;max-width:300px}.welcome{font-size:18px}.postcard{transform:none;max-width:100%;padding:18px}.postcard-places{font-size:24px;padding:12px 0}.postcard-label,.postcard-foot{font-size:9px}.day-link .weekday{font-size:10px}.day-link{font-size:12px}.event{padding:22px 0}h3{font-size:23px}.calendar-menu summary{min-height:40px;padding:10px 11px}.directions{display:inline-flex;align-items:center;min-height:40px}.event-actions{gap:12px}.site-footer{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:white;color:#17271d;font-size:11pt}.site-shell{max-width:none;padding:0}.hero{padding:20px 0;grid-template-columns:1fr}.hero h1{font-size:32pt}.postcard,.day-nav,.event-actions,.skip-link{display:none!important}.journal{display:block;padding:12px 0}.day-panel[hidden]{display:block!important}.day-panel{margin-top:26px}.day-content{min-height:0}.event{break-inside:avoid;padding:12px 0}h2{font-size:22pt}h3{font-size:17pt}.site-footer{margin-top:20px}}
+
+/* Maui postcard */
+
+#maui-feature{--pf-paper:var(--paper);--pf-ink:var(--ink);--pf-muted:var(--muted);--pf-line:var(--line);--pf-surface:var(--surface);--pf-water:#a8c5b5;--pf-sand:#e5d9b7;--pf-sun:#dca873;--pf-sky:#e8ece0;--pf-shadow:#243e3125}
+
+
+
+
+#maui-feature .pf-perspective{perspective:1400px;margin:32px 8px 24px}
+#maui-feature .pf-postcard{display:block;width:100%;padding:0;border:0;background:transparent;color:inherit;font:inherit;text-align:left;transform:rotate(-1deg);position:relative;border-radius:1px}
+#maui-feature .pf-rotor{display:grid;transform-style:preserve-3d;transition:transform 760ms cubic-bezier(.3,.05,.25,1)}
+#maui-feature .pf-postcard[aria-pressed=true] .pf-rotor{transform:rotateY(180deg)}
+#maui-feature .pf-face{display:block;grid-area:1/1;box-sizing:border-box;width:100%;padding:18px;background:var(--pf-surface);border:1px solid var(--pf-line);min-height:332px;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 5px 12px var(--pf-shadow)}
+#maui-feature .pf-front{transform:rotateY(0deg)}
+#maui-feature .pf-back{transform:rotateY(180deg)}
+#maui-feature .pf-top{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:1.5px;margin-bottom:16px;flex-wrap:wrap}
+#maui-feature .pf-scene{display:block;height:175px;background:var(--pf-sky);position:relative;overflow:hidden}
+#maui-feature .pf-sun{position:absolute;width:68px;height:68px;left:61%;top:14px;border-radius:50%;background:var(--pf-sun)}
+#maui-feature .pf-mountain{position:absolute;left:8%;bottom:33px;width:72%;height:97px;background:var(--pf-muted);clip-path:polygon(0 100%,26% 25%,40% 48%,62% 0,100% 100%)}
+#maui-feature .pf-ocean{position:absolute;bottom:0;height:52px;width:120%;left:-10%;background:var(--pf-water);border-radius:50% 40% 0 0}
+#maui-feature .pf-ripple{position:absolute;bottom:19px;left:15%;width:37%;height:5px;border-radius:50%;background:var(--pf-surface);opacity:.5}
+#maui-feature .pf-shore{position:absolute;right:-12px;bottom:-15px;width:40%;height:38px;background:var(--pf-sand);border-radius:80% 0 0 0;transform:rotate(-6deg)}
+#maui-feature .pf-palm{position:absolute;bottom:7px;right:8%;font-size:74px}
+#maui-feature .pf-plane{position:absolute;left:6%;top:18px;font-size:24px;color:var(--pf-ink)}
+#maui-feature .pf-caption{display:block;text-align:center;font:italic 21px/1.4 Georgia,serif;margin:16px 0 7px}
+#maui-feature .pf-small{display:block;text-align:center;font-size:12px;color:var(--pf-muted)}
+#maui-feature .pf-message{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;margin:18px 0 22px}
+#maui-feature .pf-hand{display:block;font:italic 21px/1.3 Georgia,serif}
+#maui-feature .pf-paragraph{display:block;margin:12px 0;color:var(--pf-muted);font-size:13px}
+#maui-feature .pf-address{display:block;border-left:1px solid var(--pf-line);padding-left:18px}
+#maui-feature .pf-stamp{display:block;margin-left:auto;width:65px;border:1px dashed var(--pf-muted);text-align:center;padding:8px;font-size:12px;box-sizing:border-box}
+#maui-feature .pf-address-line{display:block;font-size:13px;color:var(--pf-muted);margin-top:12px;padding-bottom:8px;border-bottom:1px solid var(--pf-line)}
+@media(max-width:420px){#maui-feature .pf-perspective{margin-left:0;margin-right:0}#maui-feature .pf-face{padding:14px;min-height:355px}#maui-feature .pf-top{font-size:10px;letter-spacing:1px}#maui-feature .pf-message{grid-template-columns:1fr}#maui-feature .pf-address{display:none}#maui-feature .pf-caption{font-size:20px}}
+@media(prefers-reduced-motion:reduce){#maui-feature .pf-rotor{transition:none}}
+
+@media(max-width:800px){#date-links{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:520px){#date-links{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media print{
+ #maui-feature .pf-perspective{perspective:none;margin:20px 0}
+ #maui-feature .pf-postcard{transform:none!important;filter:none!important}
+ #maui-feature .pf-rotor{display:block;transform:none!important;transition:none}
+ #maui-feature .pf-face{transform:none;box-shadow:none;min-height:0;break-inside:avoid;backface-visibility:visible;margin-bottom:16px}
+ #maui-feature .pf-scene{display:none}
+}
